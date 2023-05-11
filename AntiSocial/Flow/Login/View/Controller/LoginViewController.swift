@@ -23,10 +23,15 @@ class LoginViewController: UIViewController {
     
     fileprivate func addTargets() {
         loginView.createNowButton.addTarget(self, action: #selector(gotoRegister), for: .touchUpInside)
+        loginView.forgotPasswordButton.addTarget(self, action: #selector(gotoForgotPassword), for: .touchUpInside)
     }
     
     @objc fileprivate func gotoRegister() {
         loginViewModel.gotoRegister()
+    }
+    
+    @objc fileprivate func gotoForgotPassword() {
+        loginViewModel.gotoForgotPassword()
     }
     
     fileprivate func setupViews() {

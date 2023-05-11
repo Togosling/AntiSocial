@@ -26,6 +26,11 @@
 		F02FF1A22A0C8ECA00413C20 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02FF1A12A0C8ECA00413C20 /* RegisterController.swift */; };
 		F02FF1A42A0C8F0000413C20 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02FF1A32A0C8F0000413C20 /* RegisterViewModel.swift */; };
 		F02FF1A62A0C8F8700413C20 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02FF1A52A0C8F8700413C20 /* RegisterCoordinator.swift */; };
+		F02FF1A82A0C920000413C20 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02FF1A72A0C920000413C20 /* RegistrationView.swift */; };
+		F02FF1B02A0CB3A300413C20 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02FF1AF2A0CB3A300413C20 /* ForgotPasswordController.swift */; };
+		F02FF1B22A0CB3CC00413C20 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02FF1B12A0CB3CC00413C20 /* ForgotPasswordViewModel.swift */; };
+		F02FF1B42A0CB44300413C20 /* ForgotPasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02FF1B32A0CB44300413C20 /* ForgotPasswordCoordinator.swift */; };
+		F02FF1B62A0CB51800413C20 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02FF1B52A0CB51800413C20 /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		F02FF1A12A0C8ECA00413C20 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		F02FF1A32A0C8F0000413C20 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		F02FF1A52A0C8F8700413C20 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		F02FF1A72A0C920000413C20 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F02FF1AF2A0CB3A300413C20 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		F02FF1B12A0CB3CC00413C20 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		F02FF1B32A0CB44300413C20 /* ForgotPasswordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCoordinator.swift; sourceTree = "<group>"; };
+		F02FF1B52A0CB51800413C20 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		F5BFDC28A311AC5C1D295C3D /* Pods-AntiSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiSocial.release.xcconfig"; path = "Target Support Files/Pods-AntiSocial/Pods-AntiSocial.release.xcconfig"; sourceTree = "<group>"; };
 		F7B8EF1377FF045799F03561 /* Pods-AntiSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiSocial.debug.xcconfig"; path = "Target Support Files/Pods-AntiSocial/Pods-AntiSocial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +131,7 @@
 		F02FF1702A0B9C3C00413C20 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				F02FF1A92A0CB34F00413C20 /* ForgotPassword */,
 				F02FF19B2A0C8DA000413C20 /* Register */,
 				F02FF17D2A0B9E2000413C20 /* Login */,
 			);
@@ -283,6 +294,58 @@
 		F02FF1A02A0C8EB600413C20 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				F02FF1A72A0C920000413C20 /* RegistrationView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		F02FF1A92A0CB34F00413C20 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F02FF1AA2A0CB35D00413C20 /* Coordinator */,
+				F02FF1AB2A0CB36300413C20 /* ViewModel */,
+				F02FF1AC2A0CB36800413C20 /* View */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		F02FF1AA2A0CB35D00413C20 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F02FF1B32A0CB44300413C20 /* ForgotPasswordCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F02FF1AB2A0CB36300413C20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F02FF1B12A0CB3CC00413C20 /* ForgotPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F02FF1AC2A0CB36800413C20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F02FF1AD2A0CB38600413C20 /* Controller */,
+				F02FF1AE2A0CB38D00413C20 /* SubView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F02FF1AD2A0CB38600413C20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F02FF1AF2A0CB3A300413C20 /* ForgotPasswordController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F02FF1AE2A0CB38D00413C20 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				F02FF1B52A0CB51800413C20 /* ForgotPasswordView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -404,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F02FF1832A0B9EF200413C20 /* FlexibleHeightWidth.swift in Sources */,
+				F02FF1B02A0CB3A300413C20 /* ForgotPasswordController.swift in Sources */,
 				F02FF19A2A0C848500413C20 /* CustomTextField.swift in Sources */,
 				F02FF1772A0B9CFD00413C20 /* AppCoordinator.swift in Sources */,
 				F02FF1A62A0C8F8700413C20 /* RegisterCoordinator.swift in Sources */,
@@ -412,8 +476,12 @@
 				F02FF1612A0A942700413C20 /* LoginViewController.swift in Sources */,
 				F02FF17B2A0B9D6200413C20 /* BaseNavigationController.swift in Sources */,
 				F02FF1792A0B9D1F00413C20 /* Coordinator.swift in Sources */,
+				F02FF1B62A0CB51800413C20 /* ForgotPasswordView.swift in Sources */,
+				F02FF1A82A0C920000413C20 /* RegistrationView.swift in Sources */,
 				F02FF1A42A0C8F0000413C20 /* RegisterViewModel.swift in Sources */,
+				F02FF1B22A0CB3CC00413C20 /* ForgotPasswordViewModel.swift in Sources */,
 				F02FF1A22A0C8ECA00413C20 /* RegisterController.swift in Sources */,
+				F02FF1B42A0CB44300413C20 /* ForgotPasswordCoordinator.swift in Sources */,
 				F02FF15D2A0A942700413C20 /* AppDelegate.swift in Sources */,
 				F02FF1932A0BA83900413C20 /* LoginView.swift in Sources */,
 				F02FF1912A0BA6EA00413C20 /* LoginViewModel.swift in Sources */,

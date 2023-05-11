@@ -8,10 +8,14 @@
 import Foundation
 
 protocol RegisterViewModelType {
-    
+    func gotoLogin()
 }
 
 class RegisterViewModel: RegisterViewModelType {
     
     var coordinator = RegisterCoordinator(navigationController: BaseNavigationController.init())
+    
+    func gotoLogin() {
+        coordinator.pop()
+    }
 }

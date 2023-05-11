@@ -9,6 +9,7 @@ import Foundation
 
 protocol LoginViewModelType {
     func gotoRegister()
+    func gotoForgotPassword()
 }
 
 class LoginViewModel: LoginViewModelType {
@@ -17,6 +18,10 @@ class LoginViewModel: LoginViewModelType {
     
     func gotoRegister() {
         coordinator.gotoRegister()
+    }
+    
+    func gotoForgotPassword() {
+        coordinator.gotoForgotPassword()
     }
     
 }

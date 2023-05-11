@@ -32,5 +32,8 @@ class LoginCoordinator: Coordinator {
         registrationCoordinator.start()
     }
     
-    
+    func gotoForgotPassword() {
+        let forgotPasswordCoordinator = ForgotPasswordCoordinator(navigationController: navigationController)
+        forgotPasswordCoordinator.start()
+    }
 }

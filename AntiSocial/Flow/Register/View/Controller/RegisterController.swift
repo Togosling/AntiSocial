@@ -10,11 +10,32 @@ import UIKit
 class RegisterController: UIViewController {
     
     fileprivate var registerViewModel: RegisterViewModelType
+    fileprivate let registrationView = RegistrationView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .purple
+        setupViews()
+        setupConstraints()
+        addTargets()
+    }
+    
+    fileprivate func addTargets() {
+        registrationView.loginButton.addTarget(self, action: #selector(gotoLogin), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func gotoLogin() {
+        registerViewModel.gotoLogin()
+    }
+    
+    fileprivate func setupViews() {
+        view.addSubview(registrationView)
+    }
+    
+    fileprivate func setupConstraints() {
+        registrationView.snp.makeConstraints { make in
+            make.size.equalToSuperview()
+        }
     }
     
     init(registerViewModel: RegisterViewModelType) {

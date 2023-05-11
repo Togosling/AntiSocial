@@ -20,12 +20,12 @@ class RegisterCoordinator: Coordinator {
         let registrationViewModel = RegisterViewModel.init()
         registrationViewModel.coordinator = self
         let registrationController = RegisterController(registerViewModel: registrationViewModel)
-        navigationController.pushViewController(registrationController, animated: true)
+        navigationController.pushViewController(registrationController, animated: false)
         
     }
     
     func pop() {
-        
+        navigationController.popViewController(animated: false)
     }
     
     
