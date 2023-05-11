@@ -12,17 +12,27 @@ class LoginViewController: UIViewController {
     
     fileprivate var loginViewModel: LoginViewModelType
     fileprivate let loginView = LoginView()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViews()
         setupConstraints()
+        addTargets()
+    }
+    
+    fileprivate func addTargets() {
+        loginView.createNowButton.addTarget(self, action: #selector(gotoRegister), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func gotoRegister() {
+        loginViewModel.gotoRegister()
     }
     
     fileprivate func setupViews() {
         view.addSubview(loginView)
     }
+    
     fileprivate func setupConstraints() {
         loginView.snp.makeConstraints { make in
             make.size.equalToSuperview()

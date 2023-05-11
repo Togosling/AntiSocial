@@ -27,5 +27,10 @@ class LoginCoordinator: Coordinator {
         
     }
     
+    func gotoRegister() {
+        let registrationCoordinator = RegisterCoordinator(navigationController: navigationController)
+        registrationCoordinator.start()
+    }
+    
     
 }

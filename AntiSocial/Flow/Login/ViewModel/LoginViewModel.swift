@@ -8,11 +8,15 @@
 import Foundation
 
 protocol LoginViewModelType {
-    
+    func gotoRegister()
 }
 
 class LoginViewModel: LoginViewModelType {
     
     var coordinator = LoginCoordinator(navigationController: BaseNavigationController.init())
+    
+    func gotoRegister() {
+        coordinator.gotoRegister()
+    }
     
 }
